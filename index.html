@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo</title>
+    <script src="https://kit.fontawesome.com/a6428406eb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="photo">
+
+    </div>
+    <div class='container'>
+        <header class="header">
+            <h1>TO-DO list</h1>
+            <input type="text" placeholder="Add new task..." class="todoInput"><button class="add">Add</button>
+            <p class="errorInfo"></p>
+        </header>
+        <main>
+                <ul class="todoList">
+                        <li class="listItem">
+                            <p class="text">Jakiś tekst</p> 
+                        <div class="list-btn">
+                            <button class="complete"><i class="fas fa-check"></i></button>
+                            <button class="edit">edit</button>
+                            <button class="delete"><i class="fas fa-xmark"></i></button>
+                        </div>
+                        </li>
+                </ul>
+        </div>
+   
+        <div class="editPopup">
+            <div class="instructions">
+                <p class = "popupInstruction">Edit you're todo item</p>
+            </div>
+            <div class="input">
+                <input type="text" class="popupInput">            
+            <div class="popupBtns">
+                <button class="submit" type="submit">Submit</button>
+                <button class="cancel" type="submit">Cancel</button>
+            </div>
+            </div>
+
+        </div>
+    
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

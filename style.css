@@ -1,0 +1,151 @@
+:root{
+    --pastelPink : #fcd5ce;
+    --background : #f8edeb;
+    --darkerkPink : #fec5bb;
+    --middlePink: #fff2f1;
+    --gray : #495057;
+    --peach: #fec89a;
+
+}
+
+*{
+    box-sizing:border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:var(--gray)
+}
+body {
+    display:flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
+    min-height: 300px;
+    border-radius:10px;
+    overflow: hidden;
+
+}
+.photo{
+    background-image: url('background-todo.jpg');
+    background-position: center;
+    background-size: cover;
+    height:350px;
+    margin-bottom:20px;
+    
+}
+.header{
+    background: linear-gradient(var(--peach), var(--darkerkPink));
+    text-align: center;
+    padding:20px 50px;
+    
+
+}
+.header h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+.todoInput, .popupInput{
+    width:80%;
+    padding:10px 5px;
+    border-radius:10px;
+    border:none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.todoList{
+    background-color: var(--middlePink)
+}
+.listItem{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.list-btn button {
+    background-color: transparent;
+    border: 2px solid var(--darkerkPink);
+    padding:5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.listItem p {
+    padding:5px
+}
+.edit{
+    color:var(--green);
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.delete{
+    color:tomato;
+}
+.errorInfo {
+    color:black;
+}
+.complete{
+    color:greenyellow;
+}
+.add{
+    padding:5px 15px;
+    margin-left: 5px;
+    border-radius:5px;
+    height: 33px;
+    border:none;
+    background-color: transparent;
+    border: 2px solid var(--background);
+    color:var(--background)
+
+}
+button {
+    transition:all 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #ff6d00;
+    transform: translateY(-0.25em);
+    color:#2a2f33;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity:50%;
+}
+.fas {
+    pointer-events: none;
+}
+.editPopup{
+    text-align: center;
+    margin-top: 100px;
+    display:none;
+    flex-direction: column;
+    width: 500px;
+    margin:auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.editPopup .instructions {
+    padding:20px 5px;
+    background: linear-gradient(var(--darkerkPink), var(--peach))
+
+}
+.instructions p {
+    color:var(--gray);
+}
+.editPopup .input {
+    background-color: var(--middlePink);
+
+}
+.popupBtns button{
+    background-color: transparent;
+    border: 2px solid var(--darkerkPink);
+    padding:5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
